@@ -14,5 +14,5 @@ agent:
   enabled: true
   resources:
     limits:
-      cpu: "4000"
+      cpu: "3000"
       memory: "6144Mi"
