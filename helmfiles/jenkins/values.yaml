@@ -1,0 +1,18 @@
+# custom Jenkins chart configuration
+# see https://github.com/jenkinsci/helm-charts/blob/main/charts/jenkins/VALUES_SUMMARY.md
+
+controller:
+  image: "gabrielgomezdelatorre/jenkins"
+  tag: "1.0.1"
+  installPlugins: false
+  overwritePluginsFromImage: false
+  JCasC:
+    defaultConfig: true
+  adminSecret: true
+
+agent:
+  enabled: true
+  resources:
+    limits:
+      cpu: "4000"
+      memory: "6144Mi"
