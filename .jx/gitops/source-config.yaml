@@ -17,6 +17,7 @@ spec:
       providerKind: github
       repositories:
       - name: test-jenkins
+      - name: test5
     server: myjenkins
   slack:
     channel: '#jenkins-x-pipelines'
