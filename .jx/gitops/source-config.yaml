@@ -3,6 +3,13 @@ kind: SourceConfig
 metadata:
   creationTimestamp: null
 spec:
+  groups:
+  - owner: gabrielggg
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: test-jenkins-2
+    scheduler: in-repo
   jenkinsServers:
   - groups:
     - owner: gabrielggg
